@@ -4,51 +4,33 @@ function Pizza(size, toppings) {
   this.toppings = toppings;
 }
 
+// function Pizza() {
+//   this.size = [];
+//   this.toppings = [];
+// }
+
 let testPizza = new Pizza("large", "pepperoni") 
-// console.log("I would like a " + testPizza.size + " " + testPizza.toppings + " please.")
+console.log("I would like a " + testPizza.size + " " + "pizza with " + testPizza.toppings + " please.")
+
+// use size to define cost
 
 
+// size 
+let small = {size: "small"}
+let medium = {size: "medium"}
+let large = {size: "large"}
 
+let size = {size: [small, medium, large]}
 
+// toppings
+let pepperoni = {topping: "pepperoni"}
+let mozzarellaCheese = {topping: "mozzarella cheese"}
+let blackOlives = {topping: "black olives"}
+let jalapenos = {topping: "jalapenos"}
+let basil = {topping: "sausage"}
 
+let toppings = {toppings: [pepperoni, mozzarellaCheese, blackOlives, jalapenos, basil]}
 
+let pizza = [size, toppings]
 
-
-
-
-// Pizza.prototype.addToppings = function(topping) {
-//   this.topping[topping.firstTopping] = topping;
-// };
-
-// // Business logic for toppings
-
-//   function Toppings(firstTopping, secondTopping, thirdTopping) {
-//     this.firstTopping = firstTopping;
-//     this.secondTopping = secondTopping;
-//     this.thirdTopping = thirdTopping;
-//   }
-
-//   let pizza = new Pizza();
-//   let isaacPizza = new Toppings("sausage", "black olives")
-
-//   Pizza.addToppings(isaacPizza);
-
-// Business Logic for AddressBook ---------
-function AddressBook() {
-  this.contacts = {};
-}
-
-AddressBook.prototype.addContact = function(contact) {
-  this.contacts[contact.firstName] = contact;
-};
-
-// Business Logic for Contacts ---------
-function Contact(firstName, lastName, phoneNumber) {
-  this.firstName = firstName;
-  this.lastName = lastName;
-  this.phoneNumber = phoneNumber;
-}
-
-Contact.prototype.fullName = function() {
-  return this.firstName + " " + this.lastName;
-};
+console.log(pizza)
