@@ -37,7 +37,6 @@ console.log(pizza) // returns undefined whenever I want to add .notation after p
 
 // User Interface Logic 
 
-$(document).ready(function({
-  event.preventDefault()
-  
-}))
+// $(document).ready(function(){
+//   event.preventDefault()
+// })
