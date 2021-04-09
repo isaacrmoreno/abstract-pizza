@@ -1,31 +1,48 @@
 // Business logic for pizza
-// function Pizza(size, toppings) {
-//   this.size = size;
-//   this.toppings = toppings;
-// }
 
 function Pizza() {
   this.size = {};
-  this.toppings = {};
+  this.topping = {};
 }
 
 Pizza.prototype.chooseSize = function(size) {
-  this.size[size.xxxxx] = size. 
+  this.size[size.xxxxx] = size
+}
+
+function Pizza(size, topping) { // this is linked with whats on line 35
+  this.size = size;
+  this.topping = topping;
+}
+
+function Size(small, medium, large) {
+  this.small = small;
+  this.medium = medium; 
+  this.large = large;
+}
+
+function Topping(pepperoni, mozzarellaCheese, blackOlives, jalapenos, basil) {
+  this.pepperoni = pepperoni;
+  this.mozzarellaCheese = mozzarellaCheese;
+  this.blackOlives = blackOlives;
+  this.jalapenos = jalapenos;
+  this.basil = basil;
 }
 
 Pizza.prototype.chooseTopping = function(topping) {
-  this.toppings[topping.zzzz] = toppings
+  this.topping[topping.zzzz] = topping
 }
 
+let testpizza1 = new Pizza("small", "pepperoni")
 
+let pizza.chooseSize(Size) // This is not correct. reread to yourself when you get back from your walk.
 
 
 // test pizza 1?
 // let pizza = {}
 
-// pizza.toppings = ["Pepperoni", "Mozzarella Cheese", "Black Olives", "Jalapenos", "Basil"]  
+// pizza.topping = ["Pepperoni", "Mozzarella Cheese", "Black Olives", "Jalapenos", "Basil"]  
 
-// console.log(pizza.toppings[0])
+// console.log(pizza.topping[0])
 
 
 
@@ -74,7 +91,7 @@ Pizza.prototype.chooseTopping = function(topping) {
 
 // let size = {size: [small, medium, large]}
 
-// toppings
+// topping
 // let pepperoni = {topping: "pepperoni"}
 // let mozzarellaCheese = {topping: "mozzarella cheese"}
 // let blackOlives = {topping: "black olives"}
