@@ -23,6 +23,7 @@ View my live site [Here]!()
 5. Bootstrap
 6. Jquery
 7. Object Oriented Programming
+8. JavaScript Object Notation
 
 ### Contact:
 
