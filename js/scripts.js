@@ -1,18 +1,24 @@
 // Business logic for pizza
-// function Pizza(size, toppings) {
-//   this.size = size;
-//   this.toppings = toppings;
-// }
+function Pizza(size, toppings) {
+  this.size = size;
+  this.toppings = toppings;
+}
 
 // function Pizza() {
 //   this.size = [];
 //   this.toppings = [];
 // }
 
-// let testPizza = new Pizza("large", "pepperoni") 
-// console.log("I would like a " + testPizza.size + " " + "pizza with " + testPizza.toppings + " please.")
+// test pizza 1
+let testPizza = new Pizza("large", "pepperoni") 
+console.log("I would like a " + testPizza.size + " " + "pizza with " + testPizza.toppings + " please.")
 
+// test pizza 2
+let testPizza2 = new Pizza("medium", ["pepperoni, " + "mozzarella cheese, " + "and black olives"])
 
+console.log("I'll have a " + testPizza2.size + " " + "pizza with " + testPizza2.toppings + " please.")
+
+// test pizza 3?
 let pizza = {}
 
 pizza.toppings = ["Pepperoni", "Mozzarella Cheese", "Black Olives", "Jalapenos", "Basil"]  
