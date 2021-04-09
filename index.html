@@ -19,6 +19,56 @@
     <div class="container">
       <h1>ABSTRACT PIZZA</h1>
       <hr />
+
+      <form>
+        <div class="form-group">
+          <label for="size">Size:</label>
+          <select name="" id="" class="form-control">
+            <option disabled hidden selected></option>
+            <option value="1">Small</option>
+            <option value="2">Medium</option>
+            <option value="3">Large</option>
+          </select>
+        </div>
+        <div>
+          <hr />
+
+          <label for="toppings">Toppings:</label>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" name="pepperoni" id="pepperoni" value="1" />
+            <label for="">Pepperoni</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input
+              type="checkbox"
+              name="mozzarellaCheese"
+              id="mozzarellaCheese"
+              value="2"
+            />
+            <label for="">Mozzarella Cheese</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input
+              type="checkbox"
+              name="blackOlives"
+              id="blackOlives"
+              value="3"
+            />
+            <label for="">Black Olives</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" name="jalapenos" id="jalapenos" value="4" />
+            <label for="">Jalapenos</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" name="basil" id="basil" value="5" />
+            <label for="">Basil</label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-danger btn-lg btn-block">
+          ORDER NOW
+        </button>
+      </form>
     </div>
   </body>
 </html>

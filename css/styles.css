@@ -1,9 +1,9 @@
 body {
-  text-align: center;
   margin: 20px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
   font-family: "Italiana", serif;
+  text-align: center;
 }
