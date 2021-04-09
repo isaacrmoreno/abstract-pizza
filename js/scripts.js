@@ -1,44 +1,63 @@
 // Business logic for pizza
-function Pizza(size, toppings) {
-  this.size = size;
-  this.toppings = toppings;
-}
-
-// function Pizza() {
-//   this.size = [];
-//   this.toppings = [];
+// function Pizza(size, toppings) {
+//   this.size = size;
+//   this.toppings = toppings;
 // }
 
-// test pizza 1
-let testPizza = new Pizza("large", "pepperoni") 
-console.log("I would like a " + testPizza.size + " " + "pizza with " + testPizza.toppings + " please.")
+function Pizza() {
+  this.size = {};
+  this.toppings = {};
+}
+
+Pizza.prototype.chooseSize = function(size) {
+  this.size[size.xxxxx] = size. 
+}
+
+Pizza.prototype.chooseTopping = function(topping) {
+  this.toppings[topping.zzzz] = toppings
+}
+
+
+
+
+// test pizza 1?
+// let pizza = {}
+
+// pizza.toppings = ["Pepperoni", "Mozzarella Cheese", "Black Olives", "Jalapenos", "Basil"]  
+
+// console.log(pizza.toppings[0])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // test pizza 2
-let testPizza2 = new Pizza("medium", ["pepperoni, " + "mozzarella cheese, " + "and black olives"])
+// let testPizza = new Pizza("large", "pepperoni") 
 
-console.log("I'll have a " + testPizza2.size + " " + "pizza with " + testPizza2.toppings + " please.")
-
-// test pizza 3?
-let pizza = {}
-
-pizza.toppings = ["Pepperoni", "Mozzarella Cheese", "Black Olives", "Jalapenos", "Basil"]  
-
-console.log(pizza.toppings[0])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// test pizza 3
+// let testPizza2 = new Pizza("medium", ["pepperoni,", "mozzarella cheese", "black olives"])
 
 // function pizzaSize(size) {
 //   return `I would like a ${size} pizza`
@@ -67,13 +86,8 @@ console.log(pizza.toppings[0])
 // let pizza = [size, topping]
 // console.log(pizza) -- returns undefined whenever I want to add dot notation after (pizza) to nest deeper into array? // rename topping variable or name within {} to avoid confusion. 
 
-
-
-
 // use size to define cost
 // small: $7, medium: $10, large: $13
-
-
 
 // User Interface Logic 
 
