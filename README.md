@@ -25,12 +25,12 @@ Incomplete site thus far.
 Describe: testPizza
 
 Test: "it should return a string with the constructor values"
-Code: let testPizza = new Pizza("large", "pepperoni")
+Code: `let testPizza = new Pizza("large", "pepperoni")`
 Expected Output: I would like a large pizza with pepperoni please.
 
-Test:
-Code:
-Expected Output:
+Test: "It should return the size of the pizza we want"
+Code: `function pizzaSize(size) { return I would like a ${size} pizza}`
+Expected Output: "I would like a small pizza"
 
 ### Technologies Used:
 

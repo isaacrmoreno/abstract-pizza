@@ -9,6 +9,11 @@ function Pizza(size, toppings) {
 //   this.toppings = [];
 // }
 
+function pizzaSize(size) {
+  return `I would like a ${size} pizza`
+}
+
+
 let testPizza = new Pizza("large", "pepperoni") 
 console.log("I would like a " + testPizza.size + " " + "pizza with " + testPizza.toppings + " please.")
 
