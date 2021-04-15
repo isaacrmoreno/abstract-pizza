@@ -33,33 +33,23 @@
         <div>
           <label for="toppings">Toppings:</label>
           <div class="custom-control custom-checkbox">
-            <input type="checkbox" name="pepperoni" id="pepperoni" value="1" />
+            <input type="checkbox" name="toppings" value="1" />
             <label for="">Pepperoni</label>
           </div>
           <div class="custom-control custom-checkbox">
-            <input
-              type="checkbox"
-              name="mozzarellaCheese"
-              id="mozzarellaCheese"
-              value="2"
-            />
+            <input type="checkbox" name="toppings" value="2" />
             <label for="">Mozzarella Cheese</label>
           </div>
           <div class="custom-control custom-checkbox">
-            <input
-              type="checkbox"
-              name="blackOlives"
-              id="blackOlives"
-              value="3"
-            />
+            <input type="checkbox" name="toppings" value="3" />
             <label for="">Black Olives</label>
           </div>
           <div class="custom-control custom-checkbox">
-            <input type="checkbox" name="jalapenos" id="jalapenos" value="4" />
+            <input type="checkbox" name="toppings" value="4" />
             <label for="">Jalapenos</label>
           </div>
           <div class="custom-control custom-checkbox">
-            <input type="checkbox" name="basil" id="basil" value="5" />
+            <input type="checkbox" name="toppings" value="5" />
             <label for="">Basil</label>
           </div>
         </div>
@@ -67,6 +57,10 @@
           ORDER NOW
         </button>
       </form>
+
+      <div>
+        <p>That will be <span id="totalPrice"></span></p>
+      </div>
     </div>
   </body>
 </html>
