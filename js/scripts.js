@@ -8,12 +8,12 @@ function Pizza(size, topping) {
 
   Pizza.prototype.calculatePrice = function () {
 
-    if (this.size === 1) {
-        this.price += 8
-    } else if (this.size === 2) {
-        this.price += 12 
-    } else (this.size === 3); {
-        this.price += 15
+    if (this.size === "1") {
+        this.price += 8;
+    } else if (this.size === "2") {
+        this.price += 12;
+    } else (this.size === "3") {
+        this.price += 15;
     }
     return this.price
   }
@@ -22,8 +22,8 @@ function Pizza(size, topping) {
 
 
 // User Interface Logic 
-// $(document).ready(function(event) {
-//   event.preventDefault()
+$(document).ready(function(event) {
+  event.preventDefault()
 
 
-// })
+})
