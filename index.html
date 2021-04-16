@@ -20,10 +20,10 @@
       <h1>ABSTRACT PIZZA</h1>
       <hr />
 
-      <form>
+      <form id="form">
         <div class="form-group">
           <label for="size">Size:</label>
-          <select name="" id="form" class="form-control" required>
+          <select id="size" class="form-control" required>
             <option disabled hidden selected></option>
             <option value="1">Small (10")</option>
             <option value="2">Medium (12")</option>
@@ -32,25 +32,31 @@
         </div>
         <div>
           <label for="toppings">Toppings:</label>
-          <div class="custom-control custom-checkbox">
-            <input type="checkbox" name="toppings" value="1" />
-            <label for="pepperoni">Pepperoni</label>
-          </div>
-          <div class="custom-control custom-checkbox">
-            <input type="checkbox" name="toppings" value="2" />
-            <label for="mozzarella Cheese">Mozzarella Cheese</label>
-          </div>
-          <div class="custom-control custom-checkbox">
-            <input type="checkbox" name="toppings" value="3" />
-            <label for="black olives">Black Olives</label>
-          </div>
-          <div class="custom-control custom-checkbox">
-            <input type="checkbox" name="toppings" value="4" />
-            <label for="jalapenos">Jalapenos</label>
-          </div>
-          <div class="custom-control custom-checkbox">
-            <input type="checkbox" name="toppings" value="5" />
-            <label for="basil">Basil</label>
+          <div class="checkboxToppings">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="toppings" />
+              <label class="form-check-label" for="pepperoni">Pepperoni</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="toppings" />
+              <label class="form-check-label" for="mozzarella Cheese"
+                >Mozzarella Cheese</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="toppings" />
+              <label class="form-check-label" for="black olives"
+                >Black Olives</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="toppings" />
+              <label class="form-check-label" for="jalapenos">Jalapenos</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" name="toppings" />
+              <label class="form-check-label" for="basil">Basil</label>
+            </div>
           </div>
         </div>
         <button type="submit" class="btn btn-danger btn-lg btn-block">
@@ -59,7 +65,7 @@
       </form>
 
       <div>
-        <p>That will be <span id="totalPrice"></span></p>
+        <p class="total">Total:<span id="totalPrice"></span></p>
       </div>
     </div>
   </body>

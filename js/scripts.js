@@ -11,7 +11,7 @@ function Pizza(size, topping) {
         this.price += 8;
     } else if (this.size === "2") {
         this.price += 12;
-    } else (this.size === "3") {
+    } else (this.size === "3"); {
         this.price += 15;
     } 
     for (let i = 0; i < this.topping.length; i++) {
@@ -20,15 +20,21 @@ function Pizza(size, topping) {
     return this.price;
   }
   
-
 // User Interface Logic 
 $(document).ready(function() {
-  $(form).submit(function(event) {
+  $("form").submit(function(event) {
     event.preventDefault()
 
+    let size = $("#size").val(); // 
+    let toppings = $("input:checkbox[toppings]:checked").map(function() {
+      return this.value; 
+    })
 
+      let newPizza = new Pizza(size, toppings);
 
+      let totalPrice = newPizza.calculatePrice();
+
+      $("#totalPrice").text(`$${totalPrice}.00`)
 
   })
-
 })
