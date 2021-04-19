@@ -1,10 +1,10 @@
-### Week Four Project
+### Abstract Pizza
 
 ##### By Isaac Moreno 👨‍💻
 
 <hr>
 
-View site [here]()!
+View site [here](https://isaacrmoreno.github.io/week-4-project/)!
 
 ### Description:
 
@@ -18,7 +18,7 @@ This is a mock pizza parlor site where a user can choose various size and toppin
 
 ### Bugs:
 
-Incomplete site thus far.
+No known bugs
 
 ### Test:
 
