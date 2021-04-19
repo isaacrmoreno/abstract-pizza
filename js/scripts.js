@@ -1,5 +1,4 @@
 // Business logic for pizza
-
 function Pizza(size, topping) { 
   this.size = size;
   this.topping = topping;
@@ -22,14 +21,13 @@ function Pizza(size, topping) {
   
 // User Interface Logic 
 $(document).ready(function() {
-  $("form").submit(function(event) {
-    event.preventDefault()
+  $("form").submit(function(e) {
+    e.preventDefault()
 
     let size = parseInt($("#size").val()); 
     let topping = $("input:checkbox[name=toppings]:checked").map(function() {
       return this.value; 
     })
-    // .get();
 
       let newPizza = new Pizza(size, topping);
       let totalPrice = newPizza.calculatePrice(); 
