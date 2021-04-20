@@ -13,10 +13,8 @@ function Pizza(size, topping) {
     } else if (this.size === 3) { 
         this.price += 15;
     } 
-    for (let i = 0; i < this.topping.length; i++) {
-      this.price += 1; 
+      this.price += this.topping.length; {
     }
-    return this.price;
   }
   
 // User Interface Logic 
@@ -30,9 +28,9 @@ $(document).ready(function() {
     })
 
       let newPizza = new Pizza(size, topping);
-      let totalPrice = newPizza.calculatePrice(); 
+      newPizza.calculatePrice(); 
 
-      $("#totalPrice").text(`$${totalPrice}.00`)
+      $("#totalPrice").text(`$${newPizza.price}.00`)
 
   });
 });
